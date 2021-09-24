@@ -1,4 +1,4 @@
-import { use_banner, game_active, reset_scores, current_player} from "./script.js"
+import { game_active, reset_scores } from "./script.js"
 
 const screens = Array.from(document.querySelectorAll(".screen"))
 const play_btn = document.querySelector("#play-btn")
@@ -11,7 +11,6 @@ const main_menu_btn = document.querySelector("#main-menu-btn")
 function main() {
     play_btn.addEventListener('mouseup', () => {
         change_screen(screens[1])
-        use_banner(`${current_player.innerText} begins`)
     })
     menu_btn.addEventListener("mouseup", () => {
         menu_side.classList.add("active")
