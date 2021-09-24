@@ -182,16 +182,16 @@ function got_winner(winner, index) {
     if(winner !== null) {
         use_intersector(index, data[winner]['color'])
         setTimeout(() => {
+            use_banner(`${data[winner]['player'].innerText} Has Won!`)
             clear_board(); 
             update_current_player()
-            use_banner(`${data[winner]['player'].innerText} Has Won!`)
         }, 1500)
     }
     else {
         setTimeout(() => {
-            clear_board(); 
+            use_banner(` Tie Game `)
+            clear_board();
             update_current_player()
-            use_banner(` Tie Game`)
         }, 1500)
     }
 
