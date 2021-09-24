@@ -188,7 +188,7 @@ function got_winner(winner, index) {
     setTimeout(() => {
         clear_board(); 
         update_current_player()
-        use_banner(`${data[winner]['player'].innerText} Has Won!`,use_banner, [`${current_player.innerText} begins`])
+        use_banner(`${data[winner]['player'].innerText} Has Won!`)
     }, 1500)
 }
 
