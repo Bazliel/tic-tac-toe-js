@@ -12,6 +12,9 @@
         width: 60%;
         left: -60%;
     }
+    .game {
+        padding: 1.2rem 3rem;
+    }
 }
 
 html {
