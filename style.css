@@ -8,19 +8,6 @@
     cursor: default;
 }
 
-@media only screen and (max-width: 800px) {
-    html {
-        font-size: 13px;
-    }
-    .menu-slide {
-        width: 60%;
-        left: -60%;
-    }
-    .game {
-        padding: 1.2rem 3rem;
-    }
-}
-
 html {
     background-color: white;
 }
@@ -410,4 +397,17 @@ body {
     font-size: 2.4em;
     font-weight: bold;
     color: #00b5ec;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 13px;
+    }
+    .menu-slide {
+        width: 60%;
+        left: -60%;
+    }
+    .game {
+        padding: 1.2rem 3rem;
+    }
 }
