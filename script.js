@@ -181,15 +181,20 @@ function log_path(cell_index) {
 function got_winner(winner, index) {
     if(winner !== null) {
         use_intersector(index, data[winner]['color'])
+        setTimeout(() => {
+            clear_board(); 
+            update_current_player()
+            use_banner(`${data[winner]['player'].innerText} Has Won!`)
+        }, 1500)
     }
     else {
-        console.log("tie game")
+        setTimeout(() => {
+            clear_board(); 
+            update_current_player()
+            use_banner(` Tie Game`)
+        }, 1500)
     }
-    setTimeout(() => {
-        clear_board(); 
-        update_current_player()
-        use_banner(`${data[winner]['player'].innerText} Has Won!`)
-    }, 1500)
+
 }
 
 function clear_board() {
