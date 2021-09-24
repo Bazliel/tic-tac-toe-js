@@ -148,7 +148,7 @@ export function use_banner(message, callback=() => {}, args=[]) {
 }
 
 function update_scores(score) {
-    let current_score = parseInt(score.iupdate_current_playernnerText);
+    let current_score = parseInt(score.innerText);
     current_score ++;
     score.innerText = current_score;
 }
