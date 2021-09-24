@@ -8,6 +8,10 @@
     html {
         font-size: 13px;
     }
+    .menu-slide {
+        width: 60%;
+        left: -60%;
+    }
 }
 
 html {
