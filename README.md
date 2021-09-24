@@ -1,3 +1,7 @@
-A basic tic tac toe games with some animations and beautiful user interface
+Features
+    -> Multi Player 
+    -> Animations
+    -> mobile support
+    
+Live View -> https://bazliel.github.io/tic-tac-toe-js
 
-and also uses modular js 
